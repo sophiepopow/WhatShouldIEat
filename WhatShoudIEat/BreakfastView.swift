@@ -6,4 +6,20 @@
 //  Copyright © 2019 Klaudia Popow. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+@IBDesignable
+class BreakfastView: UIView, NibLoadable {
+    
+    @IBOutlet weak var mealTypeLabel: UILabel!
+    
+    @IBOutlet weak var mealTypeImage: UIImageView!
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setupFromNib()
+    }
+    
+}
+
+

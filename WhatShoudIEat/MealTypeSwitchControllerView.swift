@@ -9,9 +9,9 @@
 import UIKit
 
 @IBDesignable
-class MealTypeSwitchControler: UIView, NibLoadable {
+class MealTypeSwitchControllerView: UIView, NibLoadable {
     
-    @IBOutlet weak var mealTypeLabel: UILabel!
+    //@IBOutlet weak var mealTypeLabel: UILabel!
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

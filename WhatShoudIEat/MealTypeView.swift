@@ -8,6 +8,20 @@
 
 import UIKit
 
-class MealTypeView: NSObject {
+@IBDesignable
+class MealTypeView: UIView, NibLoadable {
 
+    @IBOutlet weak var mealTypeLabel: UILabel!
+    @IBOutlet weak var mealTypeImage: UIImageView!
+    @IBOutlet weak var mealTypeButton: UIButton!
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setupFromNib()
+    }
+    
+//    @IBAction func tapped() {
+//
+//    }
+    
 }
