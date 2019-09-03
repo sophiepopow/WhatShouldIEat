@@ -72,19 +72,20 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FoodCell" rowHeight="150" id="Bju-6i-vtf" customClass="FoodCell" customModule="WhatShoudIEat" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bju-6i-vtf" id="3ZW-LJ-Pff">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bju-6i-vtf" id="3ZW-LJ-Pff">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ecz-Rv-AYe">
-                                                    <rect key="frame" x="8" y="34" width="200" height="100"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ecz-Rv-AYe">
+                                                    <rect key="frame" x="8" y="1" width="328" height="133"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="100" id="X7M-Bw-lcX"/>
-                                                        <constraint firstAttribute="width" constant="200" id="jdT-47-1Zx"/>
+                                                        <constraint firstAttribute="height" constant="150" id="6Jc-y1-PT2"/>
+                                                        <constraint firstAttribute="width" secondItem="Ecz-Rv-AYe" secondAttribute="height" multiplier="328:133" id="awJ-7m-BKE"/>
+                                                        <constraint firstAttribute="width" constant="150" id="hsN-yw-eip"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2N-wz-aAi">
-                                                    <rect key="frame" x="224" y="48" width="170" height="100"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2N-wz-aAi">
+                                                    <rect key="frame" x="352" y="34" width="42" height="100"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="100" id="7vN-zo-UW2"/>
                                                     </constraints>
@@ -108,12 +109,12 @@
                                                 <constraint firstItem="e2N-wz-aAi" firstAttribute="trailing" secondItem="3ZW-LJ-Pff" secondAttribute="trailingMargin" id="2eR-rd-jqz"/>
                                                 <constraint firstItem="tiV-7g-3F8" firstAttribute="leading" secondItem="Ecz-Rv-AYe" secondAttribute="trailing" constant="16" id="2fP-jo-ZyJ"/>
                                                 <constraint firstItem="tiV-7g-3F8" firstAttribute="top" secondItem="Ecz-Rv-AYe" secondAttribute="top" id="7Aj-Xq-tec"/>
-                                                <constraint firstItem="Ecz-Rv-AYe" firstAttribute="top" secondItem="3ZW-LJ-Pff" secondAttribute="top" constant="16" id="Atg-t9-NLf"/>
                                                 <constraint firstAttribute="bottom" secondItem="Ecz-Rv-AYe" secondAttribute="bottom" constant="16" id="EKH-M0-56I"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="e2N-wz-aAi" secondAttribute="bottom" constant="5" id="H1B-Ip-tiy"/>
                                                 <constraint firstItem="e2N-wz-aAi" firstAttribute="leading" secondItem="Ecz-Rv-AYe" secondAttribute="trailing" constant="16" id="JcC-7y-DGY"/>
                                                 <constraint firstItem="Ecz-Rv-AYe" firstAttribute="top" secondItem="3ZW-LJ-Pff" secondAttribute="topMargin" constant="-10" id="LBX-1N-gGI"/>
                                                 <constraint firstItem="Ecz-Rv-AYe" firstAttribute="leading" secondItem="3ZW-LJ-Pff" secondAttribute="leading" constant="8" id="bJS-27-KSM"/>
+                                                <constraint firstItem="Ecz-Rv-AYe" firstAttribute="top" secondItem="3ZW-LJ-Pff" secondAttribute="top" constant="8" id="xvo-5r-nf0"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

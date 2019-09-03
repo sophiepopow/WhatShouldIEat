@@ -49,11 +49,11 @@ class FoodTableViewController: UIViewController {
         
         switch mealType {
         case .breakfast?:
-            self.data = [CellData.init(title: "breakfast", description: "Lorem ipsum", image: #imageLiteral(resourceName: "snack2"), segmentedcategory: SegmentedCategory.cook, mealCategory: MealCategory.breakfast), CellData.init(title: "breakfast number 2", description: "Lorem ipsum", image: #imageLiteral(resourceName: "test2"), segmentedcategory: SegmentedCategory.cook, mealCategory: MealCategory.breakfast)]
+            self.data = [CellData.init(title: "breakfast", description: "Lorem ipsum", image: #imageLiteral(resourceName: "snack2"), segmentedcategory: SegmentedCategory.cook, mealCategory: MealCategory.breakfast), CellData.init(title: "breakfast number 2", description: "Lorem ipsum", image: #imageLiteral(resourceName: "test2"), segmentedcategory: SegmentedCategory.go, mealCategory: MealCategory.breakfast)]
         case .lunch?:
-            self.data = [CellData.init(title: "lunch", description: "Lorem ipsum", image: #imageLiteral(resourceName: "pexels-photo-247685.png"), segmentedcategory: SegmentedCategory.cook, mealCategory: MealCategory.breakfast)]
+            self.data = [CellData.init(title: "lunch", description: "Lorem ipsum", image: #imageLiteral(resourceName: "pexels-photo-247685.png"), segmentedcategory: SegmentedCategory.cook, mealCategory: MealCategory.lunch)]
         case .snack?:
-            self.data = [CellData.init(title: "snack", description: "Lorem ipsum", image: #imageLiteral(resourceName: "pexels-photo-247685.png"), segmentedcategory: SegmentedCategory.cook, mealCategory: MealCategory.breakfast)]
+            self.data = [CellData.init(title: "snack", description: "Lorem ipsum", image: #imageLiteral(resourceName: "pexels-photo-247685.png"), segmentedcategory: SegmentedCategory.cook, mealCategory: MealCategory.snack)]
         default:
             fatalError("Error")
         }
