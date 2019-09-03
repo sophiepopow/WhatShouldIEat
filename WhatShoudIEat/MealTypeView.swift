@@ -19,9 +19,4 @@ class MealTypeView: UIView, NibLoadable {
         super.init(coder: aDecoder)
         setupFromNib()
     }
-    
-//    @IBAction func tapped() {
-//
-//    }
-    
 }

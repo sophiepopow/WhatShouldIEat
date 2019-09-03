@@ -46,14 +46,14 @@ class FoodCategoryViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let foodTableViewController = storyboard.instantiateViewController(withIdentifier: "FoodTableViewController") as! FoodTableViewController
         
-        let mealTypeEnum: MealCategory
+        let data: [CellData]
         switch sender {
         case breakfastView.mealTypeButton:
-            mealTypeEnum = .breakfast
+            data = FoodService.breakfast
         case lunchView.mealTypeButton:
-            mealTypeEnum = .lunch
+            data = FoodService.lunch
         case snackView.mealTypeButton:
-            mealTypeEnum = .snack
+            data = FoodService.snack
         default:
             fatalError("Unkown meal Type button")
         }
@@ -62,7 +62,7 @@ class FoodCategoryViewController: UIViewController {
 //        }
         
         //        foodTableViewController.data = // ustawić na data w zależnosci od tapnietego widoku oraz switcha czy tam segmented controll
-        foodTableViewController.mealType = mealTypeEnum
+        foodTableViewController.data = data
         self.navigationController?.show(foodTableViewController, sender: self)
     }
     

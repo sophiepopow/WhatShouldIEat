@@ -72,22 +72,22 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FoodCell" rowHeight="150" id="Bju-6i-vtf" customClass="FoodCell" customModule="WhatShoudIEat" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bju-6i-vtf" id="3ZW-LJ-Pff">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bju-6i-vtf" id="3ZW-LJ-Pff">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ecz-Rv-AYe">
-                                                    <rect key="frame" x="8" y="1" width="328" height="133"/>
+                                                    <rect key="frame" x="8" y="8" width="370" height="150"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="150" id="6Jc-y1-PT2"/>
                                                         <constraint firstAttribute="width" secondItem="Ecz-Rv-AYe" secondAttribute="height" multiplier="328:133" id="awJ-7m-BKE"/>
                                                         <constraint firstAttribute="width" constant="150" id="hsN-yw-eip"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2N-wz-aAi">
-                                                    <rect key="frame" x="352" y="34" width="42" height="100"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2N-wz-aAi">
+                                                    <rect key="frame" x="394" y="34" width="0.0" height="100"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="100" id="7vN-zo-UW2"/>
+                                                        <constraint firstAttribute="height" constant="200" id="7vN-zo-UW2"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -133,13 +133,16 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LHT-9F-qMr" customClass="MealTypeSwitchControler">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LHT-9F-qMr">
                                 <rect key="frame" x="107" y="834" width="200" height="29"/>
                                 <segments>
                                     <segment title="Cook"/>
                                     <segment title="Go"/>
                                 </segments>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="indexChanged:" destination="JKJ-cc-H0J" eventType="valueChanged" id="tgS-pi-rGF"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -159,7 +162,7 @@
                     </view>
                     <connections>
                         <outlet property="foodTableView" destination="6B7-gf-BR2" id="WCX-yW-Qbi"/>
-                        <outlet property="segmentedControl" destination="LHT-9F-qMr" id="ACh-uB-msc"/>
+                        <outlet property="segmentedControl" destination="LHT-9F-qMr" id="Lds-1p-bwc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B9G-WL-hdv" userLabel="First Responder" sceneMemberID="firstResponder"/>
