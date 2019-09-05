@@ -9,9 +9,9 @@
 import Foundation
 
 struct FoodService {
-    static let breakfast = [CellData.init(title: "breakfast", description: "Very long breakfast description hello have a nice day", image: #imageLiteral(resourceName: "snack2"), segmentedcategory: SegmentedCategory.cook), CellData.init(title: "breakfast number 2", description: "Lorem ipsum", image: #imageLiteral(resourceName: "test2"), segmentedcategory: SegmentedCategory.go)]
+    static let breakfast = [CellData.init(title: "Granola bowl", description: "Very long breakfast description hello have a nice day", image: #imageLiteral(resourceName: "breakfastGranola"), segmentedcategory: SegmentedCategory.cook), CellData.init(title: "Pancakes number 2", description: "Lorem ipsum", image: #imageLiteral(resourceName: "breakfastPancakes"), segmentedcategory: SegmentedCategory.cook), CellData.init(title: "Avocado Toast", description: "Very long breakfast description hello have a nice day", image: #imageLiteral(resourceName: "breakfastToast"), segmentedcategory: SegmentedCategory.cook), CellData.init(title: "Salmon Donut", description: "Lorem ipsum", image: #imageLiteral(resourceName: "pexels-photo-1098599"), segmentedcategory: SegmentedCategory.go)]
     
-    static let lunch = [CellData.init(title: "lunch", description: "Lorem ipsum", image: #imageLiteral(resourceName: "pexels-photo-247685.png"), segmentedcategory: SegmentedCategory.cook)]
+    static let lunch = [CellData.init(title: "Sashimi", description: "Lorem ipsum", image: #imageLiteral(resourceName: "lunchSashimi"), segmentedcategory: SegmentedCategory.go), CellData.init(title: "Pasta with toamto sauce", description: "Lorem ipsum", image: #imageLiteral(resourceName: "lunchTomatoSpaghetti"), segmentedcategory: SegmentedCategory.cook)]
     
-    static let snack = [CellData.init(title: "snack", description: "Lorem ipsum", image: #imageLiteral(resourceName: "pexels-photo-247685.png"), segmentedcategory: SegmentedCategory.cook)]
+    static let snack = [CellData.init(title: "Berries", description: "Lorem ipsum", image: #imageLiteral(resourceName: "snackBerries"), segmentedcategory: SegmentedCategory.cook)]
 }

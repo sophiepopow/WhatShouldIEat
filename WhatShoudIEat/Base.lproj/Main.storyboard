@@ -77,15 +77,20 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ecz-Rv-AYe">
-                                                    <rect key="frame" x="8" y="8" width="370" height="150"/>
+                                                    <rect key="frame" x="8" y="8" width="150" height="150"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="150" id="6Jc-y1-PT2"/>
-                                                        <constraint firstAttribute="width" secondItem="Ecz-Rv-AYe" secondAttribute="height" multiplier="328:133" id="awJ-7m-BKE"/>
+                                                        <constraint firstAttribute="width" secondItem="Ecz-Rv-AYe" secondAttribute="height" multiplier="1:1" id="awJ-7m-BKE"/>
                                                         <constraint firstAttribute="width" constant="150" id="hsN-yw-eip"/>
                                                     </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2N-wz-aAi">
-                                                    <rect key="frame" x="394" y="34" width="0.0" height="100"/>
+                                                    <rect key="frame" x="174" y="34" width="220" height="100"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="200" id="7vN-zo-UW2"/>
                                                     </constraints>

@@ -17,7 +17,8 @@ class FoodCategoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        breakfastView.mealTypeLabel.text = "breakfast"
+//        朝ご飯
+        breakfastView.mealTypeLabel.text = "breaky"
         breakfastView.mealTypeLabel.transform = CGAffineTransform(rotationAngle: -CGFloat.pi / 2)
         lunchView.mealTypeLabel.text = "lunch"
         lunchView.mealTypeLabel.transform = CGAffineTransform(rotationAngle: -CGFloat.pi / 2)

@@ -22,42 +22,43 @@
             <rect key="frame" x="0.0" y="0.0" width="490" height="281"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bM7-JX-9Zz">
-                    <rect key="frame" x="73.666666666666657" y="16" width="400.33333333333337" height="249"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bM7-JX-9Zz">
+                    <rect key="frame" x="57.666666666666657" y="16" width="416.33333333333337" height="249"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                             <integer key="value" value="10"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35q-zh-3nY">
-                    <rect key="frame" x="15.999999999999996" y="131" width="41.666666666666657" height="19.333333333333343"/>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0l-zN-rBt">
+                    <rect key="frame" x="57.666666666666657" y="16" width="416.33333333333337" height="249"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35q-zh-3nY">
+                    <rect key="frame" x="8" y="130.33333333333334" width="41.666666666666664" height="20.333333333333343"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <attributedString key="attributedText">
                         <fragment content="Label">
                             <attributes>
                                 <font key="NSFont" size="17" name=".AppleSystemUIFont"/>
-                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                             </attributes>
                         </fragment>
                     </attributedString>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0l-zN-rBt">
-                    <rect key="frame" x="73.666666666666657" y="16" width="400.33333333333337" height="249"/>
-                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="g0l-zN-rBt" firstAttribute="bottom" secondItem="bM7-JX-9Zz" secondAttribute="bottom" id="6Se-yi-DxU"/>
+                <constraint firstItem="bM7-JX-9Zz" firstAttribute="leading" secondItem="35q-zh-3nY" secondAttribute="trailing" constant="8" id="B1l-Zq-Yig"/>
                 <constraint firstItem="g0l-zN-rBt" firstAttribute="leading" secondItem="bM7-JX-9Zz" secondAttribute="leading" id="OTH-Vh-o67"/>
                 <constraint firstItem="35q-zh-3nY" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="QuT-eV-WM8"/>
                 <constraint firstItem="bM7-JX-9Zz" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="Wc6-vr-HBm"/>
                 <constraint firstItem="g0l-zN-rBt" firstAttribute="trailing" secondItem="bM7-JX-9Zz" secondAttribute="trailing" id="crr-J5-ucV"/>
                 <constraint firstItem="g0l-zN-rBt" firstAttribute="top" secondItem="bM7-JX-9Zz" secondAttribute="top" id="gKx-YA-RVa"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bM7-JX-9Zz" secondAttribute="trailing" constant="16" id="gc2-Pg-6RZ"/>
-                <constraint firstItem="bM7-JX-9Zz" firstAttribute="leading" secondItem="35q-zh-3nY" secondAttribute="trailing" constant="16" id="nf9-Cj-ozh"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="bM7-JX-9Zz" secondAttribute="bottom" constant="16" id="wnj-QH-EXV"/>
-                <constraint firstItem="35q-zh-3nY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="zQR-Ot-v2F"/>
+                <constraint firstItem="35q-zh-3nY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="zQR-Ot-v2F"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
