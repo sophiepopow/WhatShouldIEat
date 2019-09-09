@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		981182732326AE93005CAB27 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981182722326AE93005CAB27 /* FoodViewController.swift */; };
 		98191D5C22DF2397008F8D16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98191D5B22DF2397008F8D16 /* AppDelegate.swift */; };
 		98191D5E22DF2397008F8D16 /* FoodCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98191D5D22DF2397008F8D16 /* FoodCategoryViewController.swift */; };
 		98191D6122DF2397008F8D16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98191D5F22DF2397008F8D16 /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		981182722326AE93005CAB27 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 		98191D5822DF2397008F8D16 /* WhatShoudIEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatShoudIEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98191D5B22DF2397008F8D16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98191D5D22DF2397008F8D16 /* FoodCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				98191D5D22DF2397008F8D16 /* FoodCategoryViewController.swift */,
 				98CAE2A1231EC67900F47882 /* FoodService.swift */,
 				98191D5F22DF2397008F8D16 /* Main.storyboard */,
+				981182722326AE93005CAB27 /* FoodViewController.swift */,
 				984EDF8A23102CBC00528E35 /* FoodCell.swift */,
 				982E724F230EE57F007928F9 /* FoodTableViewController.swift */,
 				98191D6222DF2399008F8D16 /* Assets.xcassets */,
@@ -286,6 +289,7 @@
 				982E7250230EE57F007928F9 /* FoodTableViewController.swift in Sources */,
 				984EDF8B23102CBC00528E35 /* FoodCell.swift in Sources */,
 				988C371C2306ED4D00CC210A /* NibLoadable.swift in Sources */,
+				981182732326AE93005CAB27 /* FoodViewController.swift in Sources */,
 				98191D5E22DF2397008F8D16 /* FoodCategoryViewController.swift in Sources */,
 				98CAE2A2231EC67900F47882 /* FoodService.swift in Sources */,
 				98191D5C22DF2397008F8D16 /* AppDelegate.swift in Sources */,

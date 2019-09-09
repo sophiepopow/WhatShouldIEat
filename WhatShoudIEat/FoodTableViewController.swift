@@ -22,16 +22,11 @@ struct CellData {
     var segmentedcategory: SegmentedCategory
 }
 
-class HeadlineTableViewCell: UITableViewCell {
-    @IBOutlet weak var headlineTitleLabel: UILabel!
-    @IBOutlet weak var headlineDescriptionLabel: UILabel!
-    @IBOutlet weak var headlineImageView: UIImageView!
-}
-
 class FoodTableViewController: UIViewController {
     
     @IBOutlet weak var foodTableView: UITableView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
+    @IBOutlet weak var randomButton: UIButton!
     
     var data = [CellData]()
     
@@ -65,7 +60,6 @@ class FoodTableViewController: UIViewController {
         }
         foodTableView.reloadData()
     }
-    
 }
 
 extension FoodTableViewController: UITableViewDelegate {
@@ -80,10 +74,10 @@ extension FoodTableViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-       let foodCell = tableView.dequeueReusableCell(withIdentifier: "FoodCell", for: indexPath) as! FoodCell
-
+        let foodCell = tableView.dequeueReusableCell(withIdentifier: "FoodCell", for: indexPath) as! FoodCell
+        
         let cellData = filteredData[indexPath.row]
-
+        
         foodCell.titleLabel.text = cellData.title
         foodCell.descriptionLabel.text = cellData.description
         foodCell.foodImageView.image = cellData.image
@@ -91,4 +85,24 @@ extension FoodTableViewController: UITableViewDataSource {
         return foodCell
     }
     
+//    @objc func showRandomFood(sender: UIButton){
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let foodView = storyboard.instantiateViewController(withIdentifier: "FoodViewController") as! FoodViewController
+//
+//        let data: [CellData]
+////        switch sender {
+////        case breakfastView.mealTypeButton:
+////            data = FoodService.breakfast
+////        case lunchView.mealTypeButton:
+////            data = FoodService.lunch
+////        case snackView.mealTypeButton:
+////            data = FoodService.snack
+////        default:
+////            fatalError("Unkown meal Type button")
+////        }
+//
+//        foodView.data = data
+//        self.navigationController?.show(foodView, sender: self)
+//    }
 }
+

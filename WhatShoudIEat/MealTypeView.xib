@@ -23,7 +23,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bM7-JX-9Zz">
-                    <rect key="frame" x="57.666666666666657" y="16" width="416.33333333333337" height="249"/>
+                    <rect key="frame" x="58" y="16" width="416" height="249"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                             <integer key="value" value="10"/>
@@ -31,10 +31,10 @@
                     </userDefinedRuntimeAttributes>
                 </imageView>
                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0l-zN-rBt">
-                    <rect key="frame" x="57.666666666666657" y="16" width="416.33333333333337" height="249"/>
+                    <rect key="frame" x="58" y="16" width="416" height="249"/>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35q-zh-3nY">
-                    <rect key="frame" x="8" y="130.33333333333334" width="41.666666666666664" height="20.333333333333343"/>
+                    <rect key="frame" x="8" y="130.33333333333334" width="42" height="20.333333333333343"/>
                     <attributedString key="attributedText">
                         <fragment content="Label">
                             <attributes>
