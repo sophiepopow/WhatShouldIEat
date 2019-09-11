@@ -7,9 +7,6 @@
 //
 
 import UIKit
-//class MealListViewController: UIViewController {
-//
-//}
 
 enum SegmentedCategory {
     case cook, go
@@ -59,6 +56,11 @@ class FoodTableViewController: UIViewController {
             break
         }
         foodTableView.reloadData()
+    }
+    
+    @IBAction func randomise(_ sender: Any) {
+        //randomly choose food
+        //go to next UIViewController
     }
 }
 

@@ -156,6 +156,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="Tapped:" destination="hKG-hG-CuX" eventType="touchUpInside" id="BEt-4v-JzK"/>
+                                    <action selector="randomise:" destination="JKJ-cc-H0J" eventType="touchUpInside" id="Tu6-WX-BL2"/>
                                 </connections>
                             </button>
                         </subviews>

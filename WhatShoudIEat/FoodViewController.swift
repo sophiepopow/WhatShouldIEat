@@ -8,6 +8,6 @@
 
 import UIKit
 
-class FoodViewController: UIView {
+class FoodViewController: UIViewController {
     
 }
