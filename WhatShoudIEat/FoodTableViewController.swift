@@ -25,6 +25,7 @@ class FoodTableViewController: UIViewController {
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var randomButton: UIButton!
     
+    
     var data = [CellData]()
     
     private var filteredData = [CellData]()
@@ -39,6 +40,7 @@ class FoodTableViewController: UIViewController {
         
         self.foodTableView.delegate = self
         self.foodTableView.dataSource = self
+        navigationController?.navigationBar.prefersLargeTitles = false
     }
     
     func filter() {
@@ -59,8 +61,16 @@ class FoodTableViewController: UIViewController {
     }
     
     @IBAction func randomise(_ sender: Any) {
-        //randomly choose food
-        //go to next UIViewController
+
+        let foodData = filteredData.randomElement()!
+        print("[sp] TUTAJ")
+        print(foodData)
+
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let foodView = storyboard.instantiateViewController(withIdentifier: "FoodViewController") as! FoodViewController
+        
+        foodView.foodItem = foodData
+        self.navigationController?.show(foodView, sender: self)
     }
 }
 

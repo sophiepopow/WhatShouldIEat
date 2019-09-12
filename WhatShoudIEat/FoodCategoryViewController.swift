@@ -38,10 +38,14 @@ class FoodCategoryViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         self.title = "What Should I Eat?"
-        navigationController?.navigationBar.prefersLargeTitles = true
-        
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
     //     to trzeba wywolac po kliknieciu / tapnieciu na jeden z 3 widokow
     @objc func showFoodTableViewController(sender: UIButton) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
