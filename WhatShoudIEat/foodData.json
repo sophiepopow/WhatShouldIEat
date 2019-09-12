@@ -1,0 +1,14 @@
+[
+{
+    "breakfast": [
+            {"title": "Granola Bowl", "description": "Add some fruits, granola and coconut milk!", "image": "", "segmentedcategory": "cook"}
+            {"title": "Pancakes", "description": "Lorem ipsum", "image": "", "segmentedcategory": "go"}
+        ],
+    "lunch": [
+            {"title": "Sahimi", "description": "mniam", "image": "", "segmentedcategory": "cook"}
+        ],
+    "snack": [
+            {"title": "Berries", "description": "lorem ipsum", "image": "", "segmentedcategory": "cook"}
+        ]
+}
+]
