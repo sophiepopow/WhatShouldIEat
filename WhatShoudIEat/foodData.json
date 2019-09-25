@@ -1,4 +1,3 @@
-[
 {
     "breakfast": [
             {"title": "Granola Bowl", "description": "Add some fruits, granola and coconut milk!", "image": "", "segmentedcategory": "cook"}
@@ -11,4 +10,3 @@
             {"title": "Berries", "description": "lorem ipsum", "image": "", "segmentedcategory": "cook"}
         ]
 }
-]
