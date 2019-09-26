@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum SegmentedCategory {
+enum SegmentedCategory: String {
     case cook, go
 }
 
@@ -63,8 +63,6 @@ class FoodTableViewController: UIViewController {
     @IBAction func randomise(_ sender: Any) {
 
         let foodData = filteredData.randomElement()!
-        print("[sp] TUTAJ")
-        print(foodData)
 
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let foodView = storyboard.instantiateViewController(withIdentifier: "FoodViewController") as! FoodViewController
@@ -74,9 +72,17 @@ class FoodTableViewController: UIViewController {
     }
 }
 
+
 extension FoodTableViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        let foodData = filteredData[indexPath.row]
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let foodView = storyboard.instantiateViewController(withIdentifier: "FoodViewController") as! FoodViewController
+        
+        foodView.foodItem = foodData
+        self.navigationController?.show(foodView, sender: self)
     }
 }
 
@@ -96,6 +102,7 @@ extension FoodTableViewController: UITableViewDataSource {
         
         return foodCell
     }
+
     
 //    @objc func showRandomFood(sender: UIButton){
 //        let storyboard = UIStoryboard(name: "Main", bundle: nil)

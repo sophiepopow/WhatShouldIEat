@@ -118,6 +118,12 @@
                                                 <constraint firstItem="Ecz-Rv-AYe" firstAttribute="top" secondItem="3ZW-LJ-Pff" secondAttribute="top" constant="8" id="xvo-5r-nf0"/>
                                                 <constraint firstItem="e2N-wz-aAi" firstAttribute="top" secondItem="tiV-7g-3F8" secondAttribute="bottom" id="yTh-tY-AgK"/>
                                             </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cell.layer.cornerRadius">
+                                                    <integer key="value" value="12"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="cell.layer.masksToBounds" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="descriptionLabel" destination="e2N-wz-aAi" id="Pmd-7W-ahe"/>

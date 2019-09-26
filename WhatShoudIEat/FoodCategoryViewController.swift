@@ -17,6 +17,7 @@ class FoodCategoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        FoodService.load()
 //        朝ご飯
         breakfastView.mealTypeLabel.text = "breaky"
         breakfastView.mealTypeLabel.transform = CGAffineTransform(rotationAngle: -CGFloat.pi / 2)
@@ -45,7 +46,7 @@ class FoodCategoryViewController: UIViewController {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.prefersLargeTitles = true
     }
-    
+     
     //     to trzeba wywolac po kliknieciu / tapnieciu na jeden z 3 widokow
     @objc func showFoodTableViewController(sender: UIButton) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
