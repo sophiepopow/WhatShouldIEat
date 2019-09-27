@@ -4,21 +4,29 @@
             "type": "breakfast",
             "dishes": [
                 {"title": "Granola Bowl", "description": "Add some fruits, granola and coconut milk!", "image": "breakfastGranola", "segmentedCategory": "cook"},
-                {"title": "Pancakes", "description": "Lorem ipsum", "image": "breakfastGranola", "segmentedCategory": "go"}
+                {"title": "Pancakes", "description": "Either american style pancakes with maple syrup or oat and banana pancakes", "image": "breakfastPancakes", "segmentedCategory": "cook"},
+                {"title": "Avocado Toast", "description": "Add an egg, tomato or other extra ingredients. Don't forget salt and spices!", "image": "breakfastToast", "segmentedCategory": "cook"},
+                {"title": "Salmon Bagel", "description": "Salmon, cucumber, avocado, philadelphia cheese", "image": "breakfastSalmonDonut", "segmentedCategory": "cook"},
+                {"title": "Salmon Bagel", "description": "Starbucks Donut", "image": "breakfastSalmonDonut", "segmentedCategory": "go"}
             ]
         },
         {
             "type": "lunch",
             "dishes": [
-                {"title": "Granola Bowl", "description": "Add some fruits, granola and coconut milk!", "image": "breakfastGranola", "segmentedCategory": "cook"},
-                {"title": "Pancakes", "description": "Lorem ipsum", "image": "breakfastGranola", "segmentedCategory": "go"}
+                {"title": "Sashimi", "description": "Still looking for a nice place", "image": "lunchSashimi", "segmentedCategory": "go"},
+                {"title": "Pasta with tomato sauce", "description": "Either zucchini or normal pasta", "image": "lunchTomatoSpaghetti", "segmentedCategory": "cook"},
+                {"title": "Tortilla with spinach", "description": "Raw nest Ślusarska 6", "image": "lunchRawNestWrap", "segmentedCategory": "go"},
+                {"title": "Fajitas", "description": "Use taco/fajita spice mix u can try to make your own tortilla", "image": "lunchFajitas", "segmentedCategory": "cook"},
+                {"title": "Salmon poke bowl", "description": "Use salmon from asia deli, add avocado, cucumber, sshi race and sesame + sesame oil, rice vinegar and soy sauce to salmon", "image": "lunchPokeBowl", "segmentedCategory": "cook"},
+                {"title": "Teriyaki Salmon", "description": "Pinterest recipe", "image": "lunchSalmon", "segmentedCategory": "cook"},
+                 {"title": "Sashimi", "description": "Use salmon from asia deli on ślusarska", "image": "lunchSashimi", "segmentedCategory": "cook"},
             ]
         },
         {
             "type": "snack",
             "dishes": [
-                {"title": "Granola Bowl", "description": "Add some fruits, granola and coconut milk!", "image": "breakfastGranola", "segmentedCategory": "cook"},
-                {"title": "Pancakes", "description": "Lorem ipsum", "image": "breakfastGranola", "segmentedCategory": "go"}
+                {"title": "Berries", "description": "Eat some Fruits!", "image": "snackBerries", "segmentedCategory": "cook"},
+                {"title": "Peach", "description": "Eat some Fruits!", "image": "snackPeach", "segmentedCategory": "cook"}
             ]
         }
     ]

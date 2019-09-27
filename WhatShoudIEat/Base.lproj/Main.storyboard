@@ -66,7 +66,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6B7-gf-BR2" customClass="Foo">
-                                <rect key="frame" x="0.0" y="139" width="414" height="679"/>
+                                <rect key="frame" x="0.0" y="131" width="414" height="679"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FoodCell" rowHeight="150" id="Bju-6i-vtf" customClass="FoodCell" customModule="WhatShoudIEat" customModuleProvider="target">
@@ -125,6 +125,7 @@
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="cell.layer.masksToBounds" value="YES"/>
                                             </userDefinedRuntimeAttributes>
                                         </tableViewCellContentView>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="descriptionLabel" destination="e2N-wz-aAi" id="Pmd-7W-ahe"/>
                                             <outlet property="foodImageView" destination="Ecz-Rv-AYe" id="VQz-bs-Suq"/>
@@ -135,7 +136,7 @@
                                 <sections/>
                             </tableView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LHT-9F-qMr">
-                                <rect key="frame" x="107" y="834" width="200" height="29"/>
+                                <rect key="frame" x="107" y="826" width="200" height="29"/>
                                 <segments>
                                     <segment title="Cook"/>
                                     <segment title="Go"/>
@@ -172,13 +173,13 @@
                             <constraint firstItem="S8T-Hd-JMH" firstAttribute="top" secondItem="v1t-u3-vDQ" secondAttribute="top" constant="16" id="8bK-V7-bky"/>
                             <constraint firstItem="6B7-gf-BR2" firstAttribute="trailing" secondItem="v1t-u3-vDQ" secondAttribute="trailing" id="Jdu-5X-h2n"/>
                             <constraint firstItem="v1t-u3-vDQ" firstAttribute="trailing" secondItem="LHT-9F-qMr" secondAttribute="trailing" constant="107" id="Qb5-GD-tkl"/>
-                            <constraint firstItem="6B7-gf-BR2" firstAttribute="top" secondItem="S8T-Hd-JMH" secondAttribute="bottom" constant="16" id="Uah-ud-hvU"/>
+                            <constraint firstItem="6B7-gf-BR2" firstAttribute="top" secondItem="S8T-Hd-JMH" secondAttribute="bottom" constant="8" id="Uah-ud-hvU"/>
                             <constraint firstItem="LHT-9F-qMr" firstAttribute="leading" secondItem="v1t-u3-vDQ" secondAttribute="leading" constant="107" id="Wba-h1-tB5"/>
-                            <constraint firstItem="LHT-9F-qMr" firstAttribute="top" secondItem="6B7-gf-BR2" secondAttribute="bottom" constant="16" id="enm-EY-Iwg"/>
+                            <constraint firstItem="LHT-9F-qMr" firstAttribute="top" secondItem="6B7-gf-BR2" secondAttribute="bottom" priority="999" constant="16" id="enm-EY-Iwg"/>
                             <constraint firstItem="6B7-gf-BR2" firstAttribute="leading" secondItem="v1t-u3-vDQ" secondAttribute="leading" id="h1G-Is-teZ"/>
                             <constraint firstItem="S8T-Hd-JMH" firstAttribute="leading" secondItem="v1t-u3-vDQ" secondAttribute="leading" constant="96" id="hYA-9Z-FWa"/>
                             <constraint firstItem="v1t-u3-vDQ" firstAttribute="trailing" secondItem="S8T-Hd-JMH" secondAttribute="trailing" constant="96" id="oPO-Bb-dpr"/>
-                            <constraint firstItem="LHT-9F-qMr" firstAttribute="bottom" secondItem="v1t-u3-vDQ" secondAttribute="bottom" id="whQ-jQ-HiV"/>
+                            <constraint firstItem="LHT-9F-qMr" firstAttribute="bottom" secondItem="v1t-u3-vDQ" secondAttribute="bottom" constant="-8" id="whQ-jQ-HiV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="v1t-u3-vDQ"/>
                     </view>
