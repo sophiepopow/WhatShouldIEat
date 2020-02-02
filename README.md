@@ -1,5 +1,4 @@
-What Should I Eat App
+**What Should I Eat App**
 
-![alt Screenshot](Images/WhatShouldIEatScr1.png =100x20)
-
-![alt Screenshot](Images/WhatShouldIEatScr2.png =100x20)
+<img src="Images/WhatShouldIEatScr1.png" width="300">
+<img src="Images/WhatShouldIEatScr2.png" width="300">
